@@ -6,12 +6,12 @@ Originally I wanted media key support, but Chrome doesn't support these keys at 
 
 ## Install Instructions
 
- - Grab the A Soft Murmur Keys zip from and extract it.
+ - Download the [A Soft Murmur Keys zip file](https://github.com/mikemaccana/aoftmurmurkeys/archive/master.zip) and extract it.
  - Visit chrome://extensions/
  - Click 'Load Unpacked Extension'
  - Select the extracted folder.
 
-Once installed, you'll need to **restart your browser**. This ensures each tab has the F5 listener running.
+Once the extension is installed, you'll need to **restart your browser**. This ensures each tab has the F5 listener running.
 
 ## License
 
