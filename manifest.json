@@ -1,39 +1,38 @@
 {
-	"name": "A Soft Murmur Keyboard Support",
-	"version": "2012.2.8",
-	"description": "Start/stops Soundcloud tracks using the F5 key on your Mac",
+  "name": "A Soft Murmur Keyboard Support",
+  "version": "2012.2.8",
+  "description": "Start/stops Soundcloud tracks using the F5 key on your Mac",
     "homepage_url": "http://github.com/mikemaccana",
-	"background": "html/background.html",
-  	"permissions": [
-	    "tabs"
-	],
-	"background": {
+  "background": "html/background.html",
+  "permissions": [
+    "tabs"
+  ],
+  "background": {
     "scripts": ["js/background.js"],
     "persistent": false
   },
-	"manifest_version": 2,
-	"content_scripts": [
-		{
-			"matches": [
-		    "http://asoftmurmur.com/*",
-		    "https://asoftmurmur.com/*"
-			],
-			"js": ["js/jquery.js", "js/content_asoftmurmur.js"],
-			"run_at": "document_end"
-		},
-		{
-			"matches": [
-		    "http://*/*",
-		    "https://*/*"
-			],
-			"js": ["js/jquery.js", "js/content_other.js"],
-			"run_at": "document_end"
-		}
-
-	],
-  	"icons": {
-		"16": "images/icons/icon16.png",
-		"48": "images/icons/icon48.png",
-		"128": "images/icons/icon128.png"
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": [
+        "http://asoftmurmur.com/*",
+        "https://asoftmurmur.com/*"
+      ],
+      "js": ["js/jquery.js", "js/content_asoftmurmur.js"],
+      "run_at": "document_end"
+    },
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "js": ["js/jquery.js", "js/content_other.js"],
+      "run_at": "document_end"
+    }
+  ],
+    "icons": {
+    "16": "images/icons/icon16.png",
+    "48": "images/icons/icon48.png",
+    "128": "images/icons/icon128.png"
     }
 }
