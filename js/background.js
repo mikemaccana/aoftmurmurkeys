@@ -13,7 +13,7 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
     if ( tabs.length) {
       log('Found an asoftmurmur tab');
       for (var i = 0; i < tabs.length; i++) {
-       	chrome.tabs.sendMessage(tabs[i].id,'yo start or stop the noise or whatever');
+       	chrome.tabs.sendMessage(tabs[i].id, 'yo start or stop the noise or whatever');
       }
     } else {
       // TODO: Maybe open a new asoftmurmur tab?
