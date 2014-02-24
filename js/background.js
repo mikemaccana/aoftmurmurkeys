@@ -12,9 +12,9 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
   chrome.tabs.query({'url':'http://asoftmurmur.com/*'}, function(tabs) {
     if ( tabs.length) {
       log('Found an asoftmurmur tab');
-      for (var i = 0; i < tabs.length; i++) {
-       	chrome.tabs.sendMessage(tabs[i].id, 'yo start or stop the noise or whatever');
-      }
+      tabs.forEach(function(tab){
+        chrome.tabs.sendMessage(tab.id, 'yo start or stop the noise or whatever');
+      });
     } else {
       // TODO: Maybe open a new asoftmurmur tab?
       log('No asoftmurmur tabs are running');
