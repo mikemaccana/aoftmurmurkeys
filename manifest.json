@@ -1,7 +1,7 @@
 {
   "name": "A Soft Murmur Keyboard Support",
-  "version": "2012.2.8",
-  "description": "Start/stops Soundcloud tracks using the F5 key on your Mac",
+  "version": "2014.2.19",
+  "description": "Start/stops A Soft Murmur using the F5 key on your Mac",
     "homepage_url": "http://github.com/mikemaccana",
   "background": "html/background.html",
   "permissions": [
@@ -36,3 +36,4 @@
     "128": "images/icons/icon128.png"
     }
 }
+
